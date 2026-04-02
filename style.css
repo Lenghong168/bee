@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 9%;
+    background: #1f242d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px 9% 0;
+}
+
+.home h1 {
+    font-size: 150px;
+    color: transparent;
+    text-shadow: 0 0 10px #fff;
+    -webkit-text-stroke: 2px #fff;
+    text-align: center;
+}
+
+.about {
+    justify-content: flex-end;
+}
+
+.about .about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.about-content a {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #4f68f2;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #4f68f2;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.gallery-content {
+    display: flex;
+    gap: 100px;
+}
+
+.gallery-content .outer {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 26px;
+    border: 2px solid #fff;
+}
+
+.gallery-content .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid #fff;
+}
+
+.gallery-content .inner img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    object-fit: cover;
+}
+
+.contact-form {
+    width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    height: 300px;
+    resize: none;
+}
+
+.contact-form button {
+    display: block;
+    padding: 12px 40px;
+    background: #4f68f2;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 10px #4f68f2;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#bee-model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    transition: transform 1s ease-out;
+}
+
+/* ========== FOOTER STYLES ========== */
+
+html {
+    scroll-behavior: smooth; /* Keep smooth scrolling if you added it earlier */
+  }
+  
+  footer {
+      padding: 40px 20px 20px 20px; /* Add padding around the footer content */
+      background-color: #1f242d; /* Assuming white background */
+      color: #97b5d3; /* Dark blue/grey color - Adjust as needed */
+      font-family: sans-serif; /* Use a specific font if desired */
+      margin-top: 50px; /* Add space above the footer */
+  }
+  
+  .footer-content {
+      max-width: 1100px; /* Limit width and center content */
+      margin: 0 auto;
+  }
+  
+  .footer-top {
+      display: flex;
+      justify-content: space-between; /* Space out subscribe and social links */
+      align-items: center;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      gap: 20px; /* Add gap between items when they wrap */
+      margin-bottom: 30px;
+  }
+  
+  /* --- Subscribe Section --- */
+  .subscribe-section {
+      display: flex;
+      align-items: center;
+      gap: 15px; /* Space between "Subscribe" label and input */
+  }
+  
+  .subscribe-section label {
+      font-weight: 500;
+      white-space: nowrap; /* Prevent label from wrapping */
+  }
+  
+  .email-input-group {
+      display: flex;
+      align-items: center;
+      border: 1px solid #bdc3c7; /* Light grey border */
+      border-radius: 25px; /* Rounded corners */
+      overflow: hidden; /* Keep button curve inside */
+      background-color: #fff;
+  }
+  
+  .email-input-group input[type="email"] {
+      border: none;
+      padding: 8px 15px;
+      outline: none;
+      border-radius: 25px 0 0 25px; /* Match outer rounding */
+      min-width: 200px; /* Adjust width as needed */
+      font-size: 14px;
+  }
+  
+  .email-input-group button {
+      background-color: #fff; /* Match input background */
+      border: none;
+      padding: 8px 12px 8px 8px; /* Adjust padding */
+      cursor: pointer;
+      display: flex; /* Align icon vertically */
+      align-items: center;
+      justify-content: center;
+      color: #34495e; /* Darker icon color */
+      border-radius: 0 25px 25px 0; /* Match outer rounding */
+      transition: background-color 0.2s ease;
+  }
+  
+  .email-input-group button:hover {
+      background-color: #000000; /* Slight hover effect */
+  }
+  
+  .email-input-group button i {
+      font-size: 14px; /* Adjust icon size */
+  }
+  
+  
+  /* --- Social Links Section --- */
+  .social-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping */
+      gap: 25px; /* Space between social links */
+  }
+  
+  .social-links li {
+      /* No specific styles needed here unless changing alignment */
+  }
+  
+  .social-links a {
+      color: inherit; /* Inherit footer text color */
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px; /* Space between icon and text */
+      font-size: 14px;
+      transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+      color: #3498db; /* Example hover color - adjust */
+  }
+  
+  .social-links i {
+      font-size: 18px; /* Icon size */
+      /* Optional: Add specific colors per platform */
+      /* &.fa-instagram { color: #e1306c; } */
+      /* &.fa-facebook-f { color: #1877f2; } */
+      /* &.fa-twitter { color: #1da1f2; } */
+      /* &.fa-youtube { color: #ff0000; } */
+  }
+  
+  /* --- Divider --- */
+  .footer-divider {
+      border: none; /* Remove default HR border */
+      height: 1px;
+      background-color: #5c95bb; /* Light grey divider color */
+      margin: 30px 0; /* Space above and below */
+  }
+  
+  /* --- Copyright --- */
+  .copyright {
+      text-align: center;
+      font-size: 13px;
+      color: #7f8c8d; /* Lighter grey color */
+  }
+  
+  
+  /* --- Responsiveness (Example) --- */
+  @media (max-width: 768px) {
+      .footer-top {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center; /* Center items */
+          gap: 30px; /* Increase gap when stacked */
+      }
+  
+      .subscribe-section {
+          flex-direction: column; /* Stack label and input on small screens */
+          align-items: center;
+          gap: 10px;
+      }
+  
+      .social-links ul {
+          justify-content: center; /* Center social icons */
+          gap: 20px;
+      }
+  }
